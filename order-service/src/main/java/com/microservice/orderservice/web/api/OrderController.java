@@ -1,6 +1,6 @@
 package com.microservice.orderservice.web.api;
 
-import com.microservice.orderservice.service.OrderService;
+import com.microservice.orderservice.business.service.OrderService;
 import com.microservice.orderservice.web.dto.OrderRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

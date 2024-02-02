@@ -1,4 +1,4 @@
-package com.microservice.inventoryservice.web.dto;
+package com.microservice.orderservice.business.dto;
 
 
 import lombok.AllArgsConstructor;
@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class InventoryResponse {
 
     private String skuCode;

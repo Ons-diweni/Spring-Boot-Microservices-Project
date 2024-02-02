@@ -1,4 +1,4 @@
-package com.microservice.orderservice.service;
+package com.microservice.orderservice.business.service;
 
 import com.microservice.orderservice.web.dto.OrderRequest;
 

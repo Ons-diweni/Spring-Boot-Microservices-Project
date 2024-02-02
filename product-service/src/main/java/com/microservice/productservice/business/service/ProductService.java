@@ -1,4 +1,4 @@
-package com.microservice.productservice.service;
+package com.microservice.productservice.business.service;
 
 import com.microservice.productservice.repository.model.Product;
 import com.microservice.productservice.web.dto.ProductRequest;

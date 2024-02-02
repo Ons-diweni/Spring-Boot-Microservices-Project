@@ -1,6 +1,6 @@
 package com.microservice.productservice.web.api;
 
-import com.microservice.productservice.service.ProductService;
+import com.microservice.productservice.business.service.ProductService;
 import com.microservice.productservice.web.dto.ProductRequest;
 import com.microservice.productservice.web.dto.ProductResponse;
 import lombok.RequiredArgsConstructor;
