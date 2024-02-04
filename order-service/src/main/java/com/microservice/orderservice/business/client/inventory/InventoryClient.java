@@ -12,11 +12,11 @@ import java.util.List;
 @Service
 public class InventoryClient {
 
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
 
     public boolean isInStock(List<String> skuCodes) {
-        List<InventoryResponse> inventoryResponses = Arrays.stream(webClient.get()
-                .uri("http://localhost:8082/api/inventories", uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
+        List<InventoryResponse> inventoryResponses = Arrays.stream(webClientBuilder.build().get()
+                .uri("http://inventory-service/api/inventories", uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)
                 .block()).toList();
